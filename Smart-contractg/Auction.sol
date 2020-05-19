@@ -57,6 +57,7 @@ contract Auction {
         Item storage bidItem = items[_itemId];
         
         for(uint i = 0; i<_count; i++ ){
+            
             bidItem.itemToken.push(tokenDetail[msg.sender].personId);
         }
     
